@@ -34,8 +34,8 @@
         </div>
         <div class="footer pure-g">
           <div class="pure-u-1 pure-u-xl-1-2 staff">
-            POWERED BY
-            <a href="./staff">SSPANEL-UIM</a>
+<!--            POWERED BY-->
+<!--            <a href="./staff">SSPANEL-UIM</a>-->
           </div>
           <div
             class="pure-u-1 pure-u-xl-1-2 time"
