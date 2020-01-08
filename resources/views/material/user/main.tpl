@@ -91,41 +91,47 @@
                             </li>
                         {/if}
 
-                        <li>
-                            <a href="/user/invite"><i class="icon icon-lg">loyalty</i>&nbsp;邀请链接</a>
-                        </li>
+{*                        <li>*}
+{*                            <a href="/user/invite"><i class="icon icon-lg">loyalty</i>&nbsp;邀请链接</a>*}
+{*                        </li>*}
                     </ul>
 
 
                     <a class="waves-attach" data-toggle="collapse" href="#ui_menu_use">使用</a>
                     <ul class="menu-collapse collapse in" id="ui_menu_use">
+                        {if $user->isAdmin()}
                         <li>
                             <a href="/user/node"><i class="icon icon-lg">airplanemode_active</i>&nbsp;节点列表</a>
                         </li>
 
-                        <li>
-                            <a href="/user/relay"><i class="icon icon-lg">compare_arrows</i>&nbsp;中转规则</a>
-                        </li>
+
+{*                        <li>*}
+{*                            <a href="/user/relay"><i class="icon icon-lg">compare_arrows</i>&nbsp;中转规则</a>*}
+{*                        </li>*}
 
                         <li>
                             <a href="/user/lookingglass"><i class="icon icon-lg">visibility</i>&nbsp;延迟检测</a>
                         </li>
+                        {/if}
 
-                        <li>
-                            <a href="/user/announcement"><i class="icon icon-lg">announcement</i>&nbsp;网站公告</a>
-                        </li>
+{*                        <li>*}
+{*                            <a href="/user/announcement"><i class="icon icon-lg">announcement</i>&nbsp;网站公告</a>*}
+{*                        </li>*}
 
                         <li>
                             <a href="/user/tutorial"><i class="icon icon-lg">start</i>&nbsp;使用教程</a>
                         </li>
                     </ul>
 
+                    {if $user->isAdmin()}
                     <a class="waves-attach" data-toggle="collapse" href="#ui_menu_detect">审计</a>
                     <ul class="menu-collapse collapse in" id="ui_menu_detect">
                         <li><a href="/user/detect"><i class="icon icon-lg">account_balance</i>&nbsp;审计规则</a></li>
                         <li><a href="/user/detect/log"><i class="icon icon-lg">assignment_late</i>&nbsp;审计记录</a></li>
                     </ul>
+                    {/if}
 
+                    {*
                     <a class="waves-attach" data-toggle="collapse" href="#ui_menu_help">商店</a>
                     <ul class="menu-collapse collapse in" id="ui_menu_help">
                         <li>
@@ -145,6 +151,7 @@
                         {/if}
 
                     </ul>
+                    *}
 
                     {if $user->isAdmin()}
                 <li>

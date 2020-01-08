@@ -38,6 +38,7 @@
                 </div>
 
 
+                {*
                 <div class="card margin-bottom-no">
                     <div class="card-main">
                         <div class="card-inner">
@@ -132,11 +133,14 @@
                         </div>
                     </div>
                 </div>
+                *}
 
+            {*
             </div>
 
 
             <div class="col-xx-12 col-sm-6">
+            *}
 
                 <div class="card margin-bottom-no">
                     <div class="card-main">
@@ -258,6 +262,7 @@
                     </div>
                 </div>
 
+                {*
                 <div class="card margin-bottom-no">
                     <div class="card-main">
                         <div class="card-inner">
@@ -314,6 +319,7 @@
                         </div>
                     </div>
                 </div>
+                *}
 
                 {if $config['port_price']>=0 || $config['port_price_specify']>=0}
                     <div class="card margin-bottom-no">
@@ -408,6 +414,7 @@
                     </div>
                 {/if}
 
+                {*
                 <div class="card margin-bottom-no">
                     <div class="card-main">
                         <div class="card-inner">
@@ -436,6 +443,7 @@
                         </div>
                     </div>
                 </div>
+                *}
 
                 {include file='dialog.tpl'}
 
@@ -457,6 +465,7 @@
     });
 </script>
 
+{*
 {literal}
 <script>
     /*
@@ -505,6 +514,7 @@
     })();
 </script>
 {/literal}
+*}
 
 {literal}
 <script>
@@ -621,15 +631,18 @@
 </script>
 {/literal}
 <script>
+    {*
     var ga_qrcode = '{$user->getGAurl()}',
             qrcode1 = new QRCode(document.getElementById("ga-qr"));
 
     qrcode1.clear();
     qrcode1.makeCode(ga_qrcode);
+    *}
 
     {if $config['enable_telegram'] == 'true' || $config['enable_discord'] == 'true'}
 
     var telegram_qrcode = 'mod://bind/{$bind_token}';
+
 
     if ($$.getElementById("telegram-qr")) {
         let qrcode2 = new QRCode(document.getElementById("telegram-qr"));
@@ -670,7 +683,9 @@
         })
     })
 </script>
-
+{/literal}
+{*
+{literal}
 <script>
     $(document).ready(function () {
         $("#ssr-update").click(function () {
@@ -703,7 +718,9 @@
         })
     })
 </script>
-
+{/literal}
+*}
+{literal}
 
 <script>
     $(document).ready(function () {
@@ -761,6 +778,10 @@
 </script>
 
 
+
+{/literal}
+{*
+{literal}
 <script>
     $(document).ready(function () {
         $("#ga-test").click(function () {
@@ -807,6 +828,9 @@
         })
     })
 </script>
+{/literal}
+*}
+{literal}
 
 <script>
     $(document).ready(function () {
@@ -868,6 +892,7 @@
     })
 </script>
 {/literal}
+{*
 <script>
     $(document).ready(function () {
         $("#theme-update").click(function () {
@@ -932,3 +957,4 @@
     })
 </script>
 {/literal}
+*}

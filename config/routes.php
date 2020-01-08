@@ -68,30 +68,30 @@ $app->group('/user', function () {
     $this->post('/checkin', App\Controllers\UserController::class . ':doCheckin');
     $this->get('/node', App\Controllers\UserController::class . ':node');
     $this->get('/tutorial', App\Controllers\UserController::class . ':tutorial');
-    $this->get('/announcement', App\Controllers\UserController::class . ':announcement');
+//    $this->get('/announcement', App\Controllers\UserController::class . ':announcement');
     $this->get('/donate', App\Controllers\UserController::class . ':donate');
     $this->get('/lookingglass', App\Controllers\UserController::class . ':lookingglass');
     $this->get('/node/{id}', App\Controllers\UserController::class . ':nodeInfo');
     $this->get('/node/{id}/ajax', App\Controllers\UserController::class . ':nodeAjax');
     $this->get('/profile', App\Controllers\UserController::class . ':profile');
-    $this->get('/invite', App\Controllers\UserController::class . ':invite');
+//    $this->get('/invite', App\Controllers\UserController::class . ':invite');
 
     $this->get('/detect', App\Controllers\UserController::class . ':detect_index');
     $this->get('/detect/log', App\Controllers\UserController::class . ':detect_log');
 
     $this->get('/disable', App\Controllers\UserController::class . ':disable');
 
-    $this->get('/shop', App\Controllers\UserController::class . ':shop');
-    $this->post('/coupon_check', App\Controllers\UserController::class . ':CouponCheck');
-    $this->post('/buy', App\Controllers\UserController::class . ':buy');
+//    $this->get('/shop', App\Controllers\UserController::class . ':shop');
+//    $this->post('/coupon_check', App\Controllers\UserController::class . ':CouponCheck');
+//    $this->post('/buy', App\Controllers\UserController::class . ':buy');
 
     // Relay Mange
-    $this->get('/relay', App\Controllers\RelayController::class . ':index');
-    $this->get('/relay/create', App\Controllers\RelayController::class . ':create');
-    $this->post('/relay', App\Controllers\RelayController::class . ':add');
-    $this->get('/relay/{id}/edit', App\Controllers\RelayController::class . ':edit');
-    $this->put('/relay/{id}', App\Controllers\RelayController::class . ':update');
-    $this->delete('/relay', App\Controllers\RelayController::class . ':delete');
+//    $this->get('/relay', App\Controllers\RelayController::class . ':index');
+//    $this->get('/relay/create', App\Controllers\RelayController::class . ':create');
+//    $this->post('/relay', App\Controllers\RelayController::class . ':add');
+//    $this->get('/relay/{id}/edit', App\Controllers\RelayController::class . ':edit');
+//    $this->put('/relay/{id}', App\Controllers\RelayController::class . ':update');
+//    $this->delete('/relay', App\Controllers\RelayController::class . ':delete');
 
     $this->get('/ticket', App\Controllers\UserController::class . ':ticket');
     $this->get('/ticket/create', App\Controllers\UserController::class . ':ticket_create');
@@ -104,11 +104,11 @@ $app->group('/user', function () {
     $this->get('/edit', App\Controllers\UserController::class . ':edit');
     $this->post('/password', App\Controllers\UserController::class . ':updatePassword');
     $this->post('/wechat', App\Controllers\UserController::class . ':updateWechat');
-    $this->post('/ssr', App\Controllers\UserController::class . ':updateSSR');
+//    $this->post('/ssr', App\Controllers\UserController::class . ':updateSSR');
     $this->post('/theme', App\Controllers\UserController::class . ':updateTheme');
     $this->post('/mail', App\Controllers\UserController::class . ':updateMail');
     $this->post('/sspwd', App\Controllers\UserController::class . ':updateSsPwd');
-    $this->post('/method', App\Controllers\UserController::class . ':updateMethod');
+//    $this->post('/method', App\Controllers\UserController::class . ':updateMethod');
     $this->post('/hide', App\Controllers\UserController::class . ':updateHide');
     $this->get('/sys', App\Controllers\UserController::class . ':sys');
     $this->get('/trafficlog', App\Controllers\UserController::class . ':trafficLog');
@@ -116,12 +116,12 @@ $app->group('/user', function () {
     $this->post('/kill', App\Controllers\UserController::class . ':handleKill');
     $this->get('/logout', App\Controllers\UserController::class . ':logout');
     $this->get('/backtoadmin', App\Controllers\UserController::class . ':backtoadmin');
-    $this->get('/code', App\Controllers\UserController::class . ':code');
-    $this->get('/alipay', App\Controllers\UserController::class . ':alipay');
-    $this->post('/code/f2fpay', App\Services\Payment::class . ':purchase');
-    $this->get('/code/codepay', App\Services\Payment::class . ':purchase');
-    $this->get('/code_check', App\Controllers\UserController::class . ':code_check');
-    $this->post('/code', App\Controllers\UserController::class . ':codepost');
+//    $this->get('/code', App\Controllers\UserController::class . ':code');
+//    $this->get('/alipay', App\Controllers\UserController::class . ':alipay');
+//    $this->post('/code/f2fpay', App\Services\Payment::class . ':purchase');
+//    $this->get('/code/codepay', App\Services\Payment::class . ':purchase');
+//    $this->get('/code_check', App\Controllers\UserController::class . ':code_check');
+//    $this->post('/code', App\Controllers\UserController::class . ':codepost');
     $this->post('/gacheck', App\Controllers\UserController::class . ':GaCheck');
     $this->post('/gaset', App\Controllers\UserController::class . ':GaSet');
     $this->get('/gareset', App\Controllers\UserController::class . ':GaReset');
@@ -131,20 +131,20 @@ $app->group('/user', function () {
     $this->post('/specifyport', App\Controllers\UserController::class . ':SpecifyPort');
     $this->post('/pacset', App\Controllers\UserController::class . ':PacSet');
     $this->post('/unblock', App\Controllers\UserController::class . ':Unblock');
-    $this->get('/bought', App\Controllers\UserController::class . ':bought');
-    $this->delete('/bought', App\Controllers\UserController::class . ':deleteBoughtGet');
+//    $this->get('/bought', App\Controllers\UserController::class . ':bought');
+//    $this->delete('/bought', App\Controllers\UserController::class . ':deleteBoughtGet');
 
     $this->get('/url_reset', App\Controllers\UserController::class . ':resetURL');
 
     $this->get('/inviteurl_reset', App\Controllers\UserController::class . ':resetInviteURL');
 
     //Reconstructed Payment System
-    $this->post('/payment/purchase', App\Services\Payment::class . ':purchase');
-    $this->get('/payment/return', App\Services\Payment::class . ':returnHTML');
+//    $this->post('/payment/purchase', App\Services\Payment::class . ':purchase');
+//    $this->get('/payment/return', App\Services\Payment::class . ':returnHTML');
 
     // Crypto Payment - BTC, ETH, EOS, BCH, LTC etch
-    $this->post('/payment/bitpay/purchase', App\Services\BitPayment::class . ':purchase');
-    $this->get('/payment/bitpay/return', App\Services\BitPayment::class . ':returnHTML');
+//    $this->post('/payment/bitpay/purchase', App\Services\BitPayment::class . ':purchase');
+//    $this->get('/payment/bitpay/return', App\Services\BitPayment::class . ':returnHTML');
 })->add(new Auth());
 
 $app->group('/payment', function () {
