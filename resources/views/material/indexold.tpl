@@ -36,6 +36,7 @@
             <div class="content">
                 <div class="inner">
                     <p>用户：<code>{$user->user_name}</code>
+                        {*
                         等级：
                         {if $user->class!=0}
                             <code>VIP{$user->class}</code>
@@ -48,6 +49,7 @@
                         {else}
                             <code>不过期</code>
                         {/if}
+                        *}
                     </p>
                     <p>总流量：<code>{$user->enableTraffic()}</code>
                         已用流量：<code>{$user->usedTraffic()}</code>
