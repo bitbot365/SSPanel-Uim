@@ -22,6 +22,7 @@ table tr td:first-child {
         <section class="content-inner margin-top-no">
             <div class="ui-card-wrap">
 
+                {*
                 <div class="col-xx-12 col-xs-6 col-lg-3">
                     <div class="card user-info">
                         <div class="user-info-main">
@@ -84,6 +85,8 @@ table tr td:first-child {
                         </div>
                     </div>
                 </div>
+                *}
+
                 <div class="col-xx-12 col-xs-6 col-lg-3">
                     <div class="card user-info">
                         <div class="user-info-main">
@@ -197,6 +200,7 @@ table tr td:first-child {
 
                             </div>
 
+                            {*
                             <div class="card-inner margin-bottom-no">
                                 <p class="card-heading"><i class="icon icon-md">account_circle</i>签到</p>
 
@@ -229,10 +233,12 @@ table tr td:first-child {
                                     </div>
                                 </dl>
                             </div>
+                            *}
 
                         </div>
                     </div>
 
+                    {*
                     <div class="card">
                         <div class="card-main">
                             <div class="card-inner margin-bottom-no">
@@ -257,6 +263,7 @@ table tr td:first-child {
                             </div>
                         </div>
                     </div>
+                    *}
 
                 </div>
 
